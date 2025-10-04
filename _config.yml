@@ -1,0 +1,27 @@
+# Configuración del sitio
+title: "Repositorio Informático"
+description: "Notas, reflexiones y herramientas de un profesor de ciclos de informática"
+baseurl: ""
+url: "https://repositorioinformatico.github.io"
+
+# Configuración de Jekyll
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Configuración de posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Excluir archivos
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
