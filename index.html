@@ -1,0 +1,28 @@
+---
+layout: default
+title: Inicio
+---
+
+<h2>Herramientas</h2>
+
+<ul>
+    <li><a href="https://repositorioinformatico.github.io/temporizador/">Temporizador para clase</a> - Temporizador para usar durante las clases</li>
+    <li><a href="https://repositorioinformatico.github.io/reloj-clase/">Reloj para clase</a> - Reloj para proyectar en clase</li>
+</ul>
+
+<h2>Últimas publicaciones</h2>
+
+{% if site.posts.size > 0 %}
+<ul>
+    {% for post in site.posts limit:10 %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <small>({{ post.date | date: "%d/%m/%Y" }})</small>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Aún no hay publicaciones.</p>
+{% endif %}
+
+<p><a href="/archivo/">Ver todas las publicaciones →</a></p>

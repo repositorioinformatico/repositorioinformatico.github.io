@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            max-width: 80ch;
+            margin: 2em auto;
+            padding: 0 1em;
+            line-height: 1.6;
+            background: white;
+            color: black;
+        }
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: purple;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 1em;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/">{{ site.title }}</a></h1>
+        <p>{{ site.description }}</p>
+        <nav>
+            <a href="/">Inicio</a> |
+            <a href="/archivo/">Archivo</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2025 Repositorio Informático</p>
+    </footer>
+</body>
+</html>
