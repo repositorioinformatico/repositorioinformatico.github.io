@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reflexión: los LLM aún no piensan como programadores"
+title: "Los LLM aún no piensan como programadores"
 date: 2025-10-11
 ---
 
