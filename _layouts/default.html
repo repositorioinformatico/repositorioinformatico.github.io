@@ -30,6 +30,35 @@
             text-align: center;
             font-size: 0.6em;
         }
+        .tooltip {
+            position: relative;
+            cursor: help;
+            text-decoration: underline dotted;
+        }
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0.8em;
+            background: #333;
+            color: #fff;
+            border-radius: 4px;
+            white-space: normal;
+            width: 40ch;
+            max-width: 90vw;
+            font-size: 0.85em;
+            line-height: 1.4;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            z-index: 1000;
+            margin-bottom: 0.5em;
+        }
+        .tooltip:hover::after {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +66,7 @@
         <h1><a href="/">{{ site.title }}</a></h1>
         <p>{{ site.description }}</p>
         <p>
-            <em><span title='[Sin verificar] "El trabajo es la primera virtud. Expresión de tradición estoica y cristiana que exalta el valor del esfuerzo como base del carácter moral. Popularizada en la Edad Media bajo el ideal monástico del ora et labora, representa la dignidad del trabajo como fuente de virtud." Cita contextual: Regla de San Benito (s. VI), cap. 48; véase también Cicerón, De Officiis (sobre disciplina y deber).'>Labor prima virtus</span>. <span title='"Los pactos deben cumplirse. Principio fundamental del Derecho (romano, canónico y moderno) y pilar del Derecho Internacional contemporáneo: los acuerdos válidos obligan a las partes y deben cumplirse de buena fe." Citas: Convención de Viena sobre el Derecho de los Tratados (1969), art. 26; Oppenheim, International Law, vol. I (principio de la obligatoriedad de los tratados).'>Pacta sunt servanda</span></em>
+            <em><span class="tooltip" data-tooltip='[Sin verificar] "El trabajo es la primera virtud. Expresión de tradición estoica y cristiana que exalta el valor del esfuerzo como base del carácter moral. Popularizada en la Edad Media bajo el ideal monástico del ora et labora, representa la dignidad del trabajo como fuente de virtud." Cita contextual: Regla de San Benito (s. VI), cap. 48; véase también Cicerón, De Officiis (sobre disciplina y deber).'>Labor prima virtus</span>. <span class="tooltip" data-tooltip='"Los pactos deben cumplirse. Principio fundamental del Derecho (romano, canónico y moderno) y pilar del Derecho Internacional contemporáneo: los acuerdos válidos obligan a las partes y deben cumplirse de buena fe." Citas: Convención de Viena sobre el Derecho de los Tratados (1969), art. 26; Oppenheim, International Law, vol. I (principio de la obligatoriedad de los tratados).'>Pacta sunt servanda</span></em>
         </p>
         <nav>
             <a href="/">Inicio</a> |
