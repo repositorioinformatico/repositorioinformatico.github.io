@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Pide que la IA critique tu idea"
-date: 2025-01-21
+date: 2025-10-21
 ---
 
-21 de enero de 2025
+21 de octubre de 2025
 
 Las IAs actuales son peligrosamente agradables. ChatGPT, Claude, Gemini... todos entrenados para validar tus ideas, para decirte que tu enfoque es creativo, que tienes razón.
 
