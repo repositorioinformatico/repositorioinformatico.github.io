@@ -1,0 +1,11 @@
+---
+layout: post
+title: "El contexto como producto en la era de la IA generativa"
+date: 2025-11-21
+---
+
+21 de noviembre de 2025
+
+La velocidad ya no es el problema. Los agentes de IA generan código más rápido de lo que podemos revisar. El cuello de botella real es otro: el conocimiento implícito que tradicionalmente residía en la memoria de los desarrolladores ahora debe explicitarse completamente. Las decisiones arquitectónicas, las alternativas descartadas, las restricciones del negocio. Los modelos de lenguaje no pueden inferir todo eso de forma fiable. Hay un problema adicional documentado por Liu et al. (2023): "lost in the middle". Los LLMs degradan su rendimiento cuando la información crítica no está en los extremos del contexto. No basta con darles todo el contexto. Hay que estructurarlo estratégicamente. Cuando múltiples desarrolladores coordinan agentes de IA con contextos divergentes, generan sistemas arquitectónicamente incompatibles a velocidad de producción. No es que los agentes fallen. Es que cada uno resuelve perfectamente un problema diferente al que debería resolver. Y lo hace tan rápido que cuando te das cuenta, tienes tres microservicios incompatibles desplegados en producción.
+
+La solución no es técnica. Es metodológica. Requiere tratar las especificaciones como artefactos versionados y ejecutables que evolucionan con el código. Los tests dejan de ser comprobaciones y se convierten en contratos de comportamiento explícitos. Las conversaciones con los agentes ya no son efímeras: son commits trazables. Esto exige un cambio de mentalidad: ingeniería de decisiones. Externalizar el contexto mediante decisiones explícitas, trazables y consultables tanto por humanos como por LLMs. No documentación narrativa que nadie lee. Documentación estructurada que los agentes pueden consultar antes de generar código. Los equipos que adopten esto no operarán 10x más rápido. Operarán categóricamente diferente. Especificarán requisitos mediante prototipos iterativos y delegarán implementaciones paralelas a múltiples agentes sin divergencia arquitectónica. Porque el contexto compartido ya no vive en las cabezas de los desarrolladores. Vive en artefactos consultables. El contexto se convierte en el producto. Y el código pasa a ser un subproducto derivable de ese contexto bien estructurado.
