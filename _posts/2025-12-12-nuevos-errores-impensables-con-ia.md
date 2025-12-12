@@ -4,8 +4,6 @@ title: "Nuevos Errores Impensables con la IA"
 date: 2025-12-12
 ---
 
-12 de diciembre de 2025
-
 Estos días programando con inteligencia artificial he descubierto algo fascinante: estamos creando categorías completamente nuevas de errores que antes eran literalmente impensables. Errores que ningún programador humano cometería jamás, porque van en contra de toda lógica.
 
 El otro día, mientras trabajaba en un archivo HTML, la IA me informó de esto:
